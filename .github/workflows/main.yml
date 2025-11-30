@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -51,4 +51,4 @@ jobs:
           git config --global user.email "${{ secrets.email }}"
           git add -f mlruns/
           git commit -m "Save mlruns from CI run" || echo "Nothing to commit"
-          git push origin main
+          git push origin master
