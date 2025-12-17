@@ -17,7 +17,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: secrets
+    environment: github-actions
 
     steps:
       # Checkout repo
